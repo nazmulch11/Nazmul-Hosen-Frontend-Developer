@@ -7,7 +7,7 @@ export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
 			{ __(
-				'Nazmul Hosen Frontend Developer – hello from the editor!',
+				'Spacex Data',
 				'nazmul-hosen-frontend-developer'
 			) }
 		</p>
