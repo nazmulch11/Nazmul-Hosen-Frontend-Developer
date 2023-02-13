@@ -1,14 +1,20 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "my-block/capsules-list",
+  "name": "create-block/capsules-list",
   "version": "0.1.0",
-  "title": "Nazmul Hosen Frontend Developer",
+  "title": "Capsule List",
   "category": "widgets",
   "icon": "list-view",
   "description": "Example block scaffolded with Create Block tool.",
   "supports": {
-    "html": false
+    "html": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": ""
+    }
   },
   "textdomain": "nazmul-hosen-frontend-developer",
   "editorScript": "file:./index.js",

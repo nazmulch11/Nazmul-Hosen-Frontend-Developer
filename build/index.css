@@ -10,4 +10,34 @@
   border: 1px dotted #f00;
 }
 
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ddd;
+}
+
 /*# sourceMappingURL=index.css.map*/

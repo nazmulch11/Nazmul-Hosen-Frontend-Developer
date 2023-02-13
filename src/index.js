@@ -1,4 +1,3 @@
-
 import { registerBlockType } from '@wordpress/blocks';
 import './style.scss';
 import Edit from './edit';
@@ -10,7 +9,13 @@ registerBlockType( metadata.name, {
 	 * @see ./edit.js
 	 */
 	edit: Edit,
-
+	attributes: {
+		res: {
+			type: 'array',
+			default: [],
+		},
+	},
+	proccess: () => {},
 	/**
 	 * @see ./save.js
 	 */
