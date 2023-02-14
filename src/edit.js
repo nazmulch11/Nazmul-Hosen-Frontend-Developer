@@ -4,7 +4,7 @@ import './editor.scss';
 import { useState } from '@wordpress/element';
 import apiFetch from '@wordpress/api-fetch';
 
-export default function Edit( { attributes, setAttributes } ) {
+export default function Edit( { setAttributes } ) {
 	const [ capsules, setCapsules ] = useState( [] );
 
 	if ( ! capsules.length ) {
@@ -14,7 +14,7 @@ export default function Edit( { attributes, setAttributes } ) {
 		} );
 	}
 
-	const capsule_data = capsules.map( ( value, key ) => {
+	const capsuleData = capsules.map( ( value, key ) => {
 		return (
 			<tr key={ key }>
 				<td>{ value.capsule_serial }</td>
@@ -28,9 +28,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<div { ...useBlockProps() }>
 			{ ! capsules.length ? (
-				<p>
-					{ __( 'Loading.....', 'nazmul-hosen-frontend-developer' ) }
-				</p>
+				<p>{ __( 'Loading…..', 'nazmul-hosen-frontend-developer' ) }</p>
 			) : (
 				<table id="data-grid">
 					<thead>
@@ -61,7 +59,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							</th>
 						</tr>
 					</thead>
-					<tbody id="grid-body">{ capsule_data }</tbody>
+					<tbody id="grid-body">{ capsuleData }</tbody>
 				</table>
 			) }
 		</div>

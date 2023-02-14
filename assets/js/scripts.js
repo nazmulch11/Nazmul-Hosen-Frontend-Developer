@@ -1,9 +1,9 @@
 function capsulefilter() {
-	var input, filter, table, tr, td, i, txtValue;
-	input = document.querySelector( '.capsule' );
-	filter = input.value.toUpperCase();
-	table = document.getElementById( 'data-grid' );
-	tr = table.getElementsByTagName( 'tr' );
+	let td, i, txtValue;
+	const input = document.querySelector( '.capsule' );
+	const filter = input.value.toUpperCase();
+	const table = document.getElementById( 'data-grid' );
+	const tr = table.getElementsByTagName( 'tr' );
 
 	for ( i = 0; i < tr.length; i++ ) {
 		td = tr[ i ].getElementsByTagName( 'td' )[ 0 ];
@@ -19,11 +19,11 @@ function capsulefilter() {
 }
 
 function statusfilter() {
-	var input, filter, table, tr, td, i, txtValue;
-	input = document.querySelector( '.status' );
-	filter = input.value.toUpperCase();
-	table = document.getElementById( 'data-grid' );
-	tr = table.getElementsByTagName( 'tr' );
+	let td, i, txtValue;
+	const input = document.querySelector( '.status' );
+	const filter = input.value.toUpperCase();
+	const table = document.getElementById( 'data-grid' );
+	const tr = table.getElementsByTagName( 'tr' );
 
 	for ( i = 0; i < tr.length; i++ ) {
 		td = tr[ i ].getElementsByTagName( 'td' )[ 1 ];
@@ -39,11 +39,11 @@ function statusfilter() {
 }
 
 function typefilter() {
-	var input, filter, table, tr, td, i, txtValue;
-	input = document.querySelector( '.type' );
-	filter = input.value.toUpperCase();
-	table = document.getElementById( 'data-grid' );
-	tr = table.getElementsByTagName( 'tr' );
+	let td, i, txtValue;
+	const input = document.querySelector( '.type' );
+	const filter = input.value.toUpperCase();
+	const table = document.getElementById( 'data-grid' );
+	const tr = table.getElementsByTagName( 'tr' );
 
 	for ( i = 0; i < tr.length; i++ ) {
 		td = tr[ i ].getElementsByTagName( 'td' )[ 2 ];

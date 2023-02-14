@@ -2,7 +2,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 
 export default function save( { attributes } ) {
-	const capsule_data = attributes.res.map( ( value, key ) => {
+	const capsuleData = attributes.res.map( ( value, key ) => {
 		return (
 			<tr key={ key }>
 				<td className="capsule">{ value.capsule_serial }</td>
@@ -25,19 +25,19 @@ export default function save( { attributes } ) {
 				<input
 					type="text"
 					className="filter capsule"
-					onkeyup="capsulefilter()"
+					onKeyUp="capsulefilter()"
 					placeholder="capsule"
 				/>
 				<input
 					type="text"
 					className="filter status"
-					onkeyup="statusfilter()"
+					onKeyUp="statusfilter()"
 					placeholder="status"
 				/>
 				<input
 					type="text"
 					className="filter type"
-					onkeyup="typefilter()"
+					onKeyUp="typefilter()"
 					placeholder="type"
 				/>
 			</div>
@@ -68,7 +68,7 @@ export default function save( { attributes } ) {
 						</th>
 					</tr>
 				</thead>
-				<tbody id="grid-body">{ capsule_data }</tbody>
+				<tbody id="grid-body">{ capsuleData }</tbody>
 			</table>
 		</div>
 	);

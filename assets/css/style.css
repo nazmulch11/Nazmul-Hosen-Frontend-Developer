@@ -1,34 +1,43 @@
-
-.filtering{
+.filtering {
 	width: 100%;
 	display: flex;
 }
+
 .filter {
 	width: 100%;
 	font-size: 16px;
 	padding: 15px;
 	border: 1px solid #ddd;
 	margin-bottom: 12px;
-  }
-  .capsule, .status{
+}
+
+.capsule,
+.status {
 	margin-right: 5px;
-  }
-  #data-grid {
+}
+
+#data-grid {
 	border-collapse: collapse;
 	width: 100%;
 	border: 1px solid #ddd;
 	font-size: 18px;
-  }
-  #data-grid th, #data-grid td {
+}
+
+#data-grid th,
+#data-grid td {
 	text-align: left;
 	padding: 12px;
-  }
-  #data-grid tr {
+}
+
+#data-grid tr {
 	border-bottom: 1px solid #ddd;
-  }
-  #data-grid tr.header, #data-grid tr:hover {
+}
+
+#data-grid tr.header,
+#data-grid tr:hover {
 	background-color: #f1f1f1;
-  }
-.capsule-data-title{
+}
+
+.capsule-data-title {
 	text-align: center;
 }
